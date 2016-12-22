@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>套餐办理</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script>
+	window.onload=function(){
+		var tabTit=document.getElementById('tit');
+		var tabCon=document.getElementById('content');
+		
+		function show(){
+			var aBtn=tabTit.getElementsByTagName('a');
+			var aDiv=tabCon.getElementsByTagName('article');
+			
+			for (var i=0; i<aBtn.length; i++){
+				aBtn[i].index=i;
+				aBtn[i].onclick=function(){
+					for (var j=0; j<aBtn.length; j++){
+						aBtn[j].className='';
+						aDiv[j].style.display='none';
+					}
+					this.className='hover';
+					aDiv[this.index].style.display='block';
+				};
+			}
+		};
+		show();
+	};
+</script>
+
+</head>
+
+<body>
+<section class="search-body">
+	<div class="search">
+    	<input type="text" placeholder="请输入手机号" />
+        <span><i class="iconfont icon-sousuo"></i></span>
+    </div>
+    <article class="home-body">
+    	<nav class="search-result clearfix" id="tit">
+        	<a class="hover">全部</a>
+            <a>待审核</a>
+            <a>待支付</a>
+            <a>已支付</a>
+            <a>待发货</a>
+            <a>已发货</a>
+        </nav>
+        <div class="item-list" id="content">
+        	<article style="display:block;">
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">待审核</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">待审核</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+            </article>
+        	<article>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已审核</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已审核</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+            </article>
+        	<article>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">待支付</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已支付</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已支付</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+				<dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已支付</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">待发货</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已发货</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="item-box">
+                    <dt class="clearfix"><span class="fr state">已发货</span><p class="fl"><span class="peo-name">James</span><span>13545688958</span></p></dt>
+                    <dd>
+                        <img src="img/user.jpg" />
+                        <div class="package-info">
+                            <p class="two-ellipsis">iPhone7手机 256*24期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐期套餐</p>
+                            <p>256*24期</p>
+                            <p>￥3000</p>
+                        </div>
+                    </dd>
+                </dl>
+            </article>
+        </div>
+    </article>
+</section>
+</body>
+</html>
